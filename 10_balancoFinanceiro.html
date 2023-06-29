@@ -19,7 +19,7 @@
 
     //Processamento
 
-    let mensagem = ((contaAgua + contaEnergia + contaTelefone + supermercado) < salario) ? `Você ganha mais do que recebe! Sobra um total de R$${salario - (contaAgua + contaEnergia + contaTelefone + supermercado)}.` : `Você gasta mais do que recebe! Falta um total de R$${(contaAgua + contaEnergia + contaTelefone + supermercado) - salario} para pagar suas contas.`;
+    let mensagem = ((contaAgua + contaEnergia + contaTelefone + supermercado) < salario) ? `Você ganha mais do que recebe! Sobra um total de R$${(salario - (contaAgua + contaEnergia + contaTelefone + supermercado)).toFixed(2).replace(".",",")}.` : `Você gasta mais do que recebe! Falta um total de R$${((contaAgua + contaEnergia + contaTelefone + supermercado) - salario).toFixed(2).replace(".",",")} para pagar suas contas.`;
     
     //Saída
 
