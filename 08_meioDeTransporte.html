@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Meio de transporte mais barato
+    // Faça um script que peça para o usuário informar o preço do litro do combustível e a quantidade de litros utilizados para se deslocar para o trabalho diariamente.
+    // Peça também ao programa para o usuário informar o preço do transporte público que deverá pagar para se deslocar ao trabalho diariamente.
+    // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
+
+    //Entrada
+
+    const precoLitro = parseFloat(prompt(`Qual o preço do litro?`).trim().replace(",","."));
+    const totalLitros = parseFloat(prompt(`Qual a quantidade de litros usados?`).trim().replace(",","."));
+    const transportePublico = parseFloat(prompt(`Qual o valor do preço do transporte público diariamente?`).trim().replace(",","."));
+
+    //Processamento
+
+    const preco = precoLitro * totalLitros
+
+    let mensagem = (preco > transportePublico) ? `Ir de tranporte público será mais barato, gastando um total de ${transportePublico.toFixed(2).replace(".",",")} ${transportePublico > 1 ? `reais` : `real`}.` : (preco < transportePublico) ? `Ir de carro será mais barato, gastando um total de ${preco.toFixed(2).replace(".",",")} ${preco > 1 ? `reais` : `real`}.` : `Insira uma resposta valida!`
+
+
+
+    //Saída
+
+    
+</script>
