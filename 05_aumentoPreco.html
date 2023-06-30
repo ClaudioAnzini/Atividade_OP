@@ -13,7 +13,7 @@
 
     //Processamento
 
-    let mensagemFinal = (valorProduto <= 280) ? `O aumento do valor produto foi de ${(valorProduto * 0.2).toFixed().replace(",",".")} ${valorProduto > 1 ? "reais" : "real"}.` : (valorProduto > 280 && valorProduto <= 700) ? `O aumento do valor produto foi de ${(valorProduto * 0.15).toFixed().replace(",",".")} ${valorProduto > 1 ? "reais" : "real"}.` : (valorProduto > 700 && valorProduto <= 1500) ? `O aumento do valor produto foi de ${(valorProduto * 0.1).toFixed().replace(",",".")} ${valorProduto > 1 ? "reais" : "real"}.` : `O valor do aumento foi de ${valorProduto * 0.05} ${valorProduto > 1 ? "reais" : "real"}.`
+    let mensagemFinal = (valorProduto <= 280) ? `O aumento do valor do produto foi de ${(valorProduto * 0.2).toFixed().replace(",",".")} ${valorProduto > 1 ? "reais" : "real"}.` : (valorProduto > 280 && valorProduto <= 700) ? `O aumento do valor produto foi de ${(valorProduto * 0.15).toFixed().replace(",",".")} ${valorProduto > 1 ? "reais" : "real"}.` : (valorProduto > 700 && valorProduto <= 1500) ? `O aumento do valor produto foi de ${(valorProduto * 0.1).toFixed().replace(",",".")} ${valorProduto > 1 ? "reais" : "real"}.` : `O valor do aumento foi de ${valorProduto * 0.05} ${valorProduto > 1 ? "reais" : "real"}.`
     
     //Saída
     alert(mensagemFinal);

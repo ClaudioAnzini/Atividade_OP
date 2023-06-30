@@ -10,7 +10,7 @@
     //Processamento
 
  
-        let mensagemFinal = (idade > 18) ? `Você é maior de idade` : `Você não é maior de idade, ainda faltam ${18 - idade} ${(18 - idade) > 1 ? `anos` : `ano`} para completar sua maioridade.`;
+        let mensagemFinal = (idade >= 18) ? `Você é maior de idade!` : `Você não é maior de idade, ainda faltam ${18 - idade} ${(18 - idade) > 1 ? `anos` : `ano`} para completar sua maioridade.`;
 
     //Saída
     alert(mensagemFinal)

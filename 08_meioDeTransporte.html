@@ -15,9 +15,9 @@
 
     const preco = precoLitro * totalLitros
 
-    let mensagem = (preco > transportePublico) ? `Ir de tranporte público será mais barato, gastando um total de ${transportePublico.toFixed(2).replace(".",",")} ${transportePublico > 1 ? `reais` : `real`}.` : (preco < transportePublico) ? `Ir de carro será mais barato, gastando um total de ${preco.toFixed(2).replace(".",",")} ${preco > 1 ? `reais` : `real`}.` : `Insira uma resposta valida!`
+    let mensagem = (preco > transportePublico) ? `Ir de tranporte público será mais barato, gastando um total de ${transportePublico.toFixed(2).replace(".",",")} ${transportePublico > 1 ? `reais` : `real`} diariamente.` : (preco < transportePublico) ? `Ir de carro será mais barato, gastando um total de ${preco.toFixed(2).replace(".",",")} ${preco > 1 ? `reais` : `real`} diariamente.` : (preco == transportePublico) ? `Os dois irão custar o mesmo valor, escolha o que desejar!` : `Insira uma resposta valida!`
 
-
+    alert(mensagem)
 
     //Saída
 
